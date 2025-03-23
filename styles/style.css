@@ -127,6 +127,107 @@
     text-align: center;
 }
 
+/* curriculum part */
+.curriculum-container{
+    background: url(../assets/bg.png);
+    margin-bottom: 3.75rem;
+}
+.curriculum-container .curriculum-title{
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+}
+.curriculum-container .card-container{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding-right: 8.75rem;
+    padding-left: 8.75rem;
+}
+
+.curriculum-container .card1{
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+.curriculum-container .card2{
+    border: 0.94px solid rgb(255, 244, 220);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+.curriculum-container .card3{
+    border: 0.94px solid rgb(242, 232, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+.curriculum-container .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.curriculum-container .card> .card-description {
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
+    text-align: center;
+}
+
+
+.curriculum-container .card>.card-extra{
+    text-decoration: none;
+    font-family: Quicksand;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.curriculum-container .card1>.card-extra{
+    color: rgb(100, 200, 255);
+}
+.curriculum-container .card2>.card-extra{
+    color: rgb(240, 170, 0);
+}
+.curriculum-container .card3>.card-extra{
+    color: rgb(135, 0, 255);
+}
+
+.curriculum-container .button-container{
+    display: flex;
+    gap: 0.625rem;
+    justify-content: center;
+    align-items: center;
+}
+.curriculum-container .button-container>a{
+    text-decoration: none;
+    padding: 1.5rem;
+}
+.curriculum-container .previous, .curriculum-container .next{
+    color: white;
+    background-color: rgb(254, 163, 1);
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+}
+.round{
+    border-radius: 100%;
+}
+
+
+
 /* RWD part */
 @media screen and (max-width:576px) {
 
