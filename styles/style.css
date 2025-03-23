@@ -297,4 +297,25 @@
         justify-content: center;
         align-items: center;
     }
+    /* curriculum section */
+    .curriculum-container{
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .curriculum-container .curriculum-title{
+        color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 1.5rem;
+    font-weight: 700;;
+    text-align: center;
+    }
+    .curriculum-container .card-container{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .curriculum-container .button-container{
+        display: none;
+    }
+
 }
