@@ -63,6 +63,24 @@
     color: rgb(93, 88, 239);
 }
 
+.toggle-button{
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 2rem;
+}
+
+.toggle-button .bar{
+    height: 0.25rem;
+    width: 100%;
+    background-color: black;
+    border-radius: 0.75rem;
+}
+
 
 /* banner styles */
 .banner-container {
@@ -109,3 +127,73 @@
     text-align: center;
 }
 
+/* RWD part */
+@media screen and (max-width:576px) {
+
+    .banner-nav,.banner-container{
+        margin: 1.25rem;
+    }
+
+    .header{
+        margin-bottom: 2.2rem;
+    }
+
+    /* navbar part */
+    .banner-nav {
+        width: 100%;
+        height: 70px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        margin: 0.75rem 1rem 0.75rem 1rem;
+    }
+    .nav-banner-division{
+        width: 100%;
+        height: 2%;
+        border-top: 0.5px solid rgb(254, 163, 1);
+    }
+
+    .toggle-button{
+        display: flex;
+    }
+
+    .banner-nav .logo-container img{
+        height: 100%;
+    }
+
+    .banner-nav ul>li, .banner-nav button, .banner-nav h1{
+        display: none;
+    }
+
+    /* banner part */
+    .banner-container{
+        flex-direction: column-reverse;
+
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-container .banner-title{
+        font-size: 1.75rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    .banner-container img{
+        width: calc(100% - 0.5rem);
+        text-align: center;
+    }
+
+    .banner-container .banner-description{
+        color: rgb(17, 17, 17);
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .banner-container .button-container{
+        justify-content: center;
+        align-items: center;
+    }
+}
