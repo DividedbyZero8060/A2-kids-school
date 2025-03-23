@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+/* shared styles */
+
 * {
     font-family: "Quicksand", sans-serif;
 }
@@ -8,13 +10,102 @@
     display: flex;
 }
 
+.primary-btn {
+    color: rgb(255, 255, 255);
+    height: 3.25rem;
+    width: 12rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 12px;
+    background: rgb(254, 163, 1);
+    padding: 0.6rem;
+    border: none;
+}
+
+
+
 /* navbar styles */
+
 .banner-nav {
-    justify-content: space-between;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .banner-nav>ul {
     gap: 2rem;
+    list-style: none;
 }
 
+.banner-nav>ul .nav-link {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.banner-nav ul .nav-word-style1{
+    color: rgb(254, 163, 1);
+}
+
+.banner-nav .nav-word-style2{
+    color: rgb(1, 172, 253);
+}
+
+.banner-nav .nav-word-style1{
+    color: rgb(5, 212, 223);
+}
+
+.banner-nav .nav-word-style1{
+    color: rgb(93, 88, 239);
+}
+
+
+/* banner styles */
+.banner-container {
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-bottom: 3.75rem;
+}
+
+.banner-container .banner-title {
+    width: auto;
+    font-size: 2.6rem;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.banner-container .banner-title>span {
+    color: rgb(254, 163, 1);
+}
+.banner-container .banner-title>br+span {
+    color: rgb(1, 172, 253);
+}
+
+.banner-container .banner-description {
+    color: rgb(17, 17, 17);
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.banner-container .banner button{
+    height: 3.25rem;
+    width: 12rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-radius: 12px;
+    background: rgb(17, 17, 17);
+    padding: 0.6rem;
+    text-align: center;
+}
 
