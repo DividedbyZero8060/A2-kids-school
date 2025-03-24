@@ -238,8 +238,9 @@
 }
 
 .stories .story-card img{
-    display: block;
-    border-radius: 1rem;
+    display: inline-block;
+    border-radius: 16px 16px 0px 0px;
+    
 }
 
 .stories .story-card-container{
@@ -250,7 +251,7 @@
     align-items: center;
     margin-right: 140px;
     margin-left: 140px;
-    margin-bottom: 90px;
+    
 }
 
 .stories #story1{
@@ -264,7 +265,7 @@
 
 .stories .story-card .story-section {
     
-    height: 50%;
+    height: auto;
     width: 100%;
 }
 
@@ -284,6 +285,9 @@
     margin-left: 2.3rem;
     margin-right: 6.25rem;
 }
+.stories .story-card .story-section-title{
+    margin:3rem 2rem 2rem 2rem;
+}
 
 .stories #story1 p{
     display: flex;
@@ -292,7 +296,7 @@
     font-size: 0.9rem;
     font-weight: 500;
     text-align: left;
-    margin: 3.2rem 4rem 2.1rem 2.3rem;
+    margin: 3.2rem 2.5rem 2.1rem 2.3rem;
 }
 
 .stories .story-card .story-button{
@@ -306,8 +310,35 @@
     background: rgb(60, 216, 232);
     padding: 0.8rem 1.2rem 0.9rem 1.25rem;
     margin-top: -6.25rem;
-    margin-left: 3rem;
+    margin-left: 2rem;
     border: none;
+}
+
+.stories .story-title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.stories .story-title{
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+.stories .button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.stories .button-container button{
+    color: white;
+    background-color: black;
+    margin-bottom: 3.75rem;
+    
 }
 /* RWD part */
 @media screen and (max-width:576px) {
@@ -397,6 +428,31 @@
 
     .curriculum-container .button-container{
         display: none;
+    }
+
+    /* stories part */
+    .stories #story1{
+        display: none;
+    }
+
+    .stories .story-card-container{
+        margin-right: 1rem;
+        margin-left: 1rem;
+        display: grid;
+        gap: 0.7rem;
+        justify-content: center;
+        align-items: center;
+        width: calc((100% - 2.7rem));
+        grid-template-columns: repeat(2,1fr);
+        
+
+    }
+    .stories .story-card img{
+        display: inline-block;
+        border-radius: 16px 16px 0px 0px;
+        width: 100%;
+        height: auto;
+        
     }
 
 }
