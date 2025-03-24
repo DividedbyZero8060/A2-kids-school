@@ -4,6 +4,7 @@
 /* shared styles */
 
 * {
+    margin: 0;
     font-family: "Quicksand", sans-serif;
 }
 
@@ -340,6 +341,75 @@
     margin-bottom: 3.75rem;
     
 }
+
+/* footer part */
+footer{
+    background-color: rgb(1, 172, 253);
+}
+.summary-page{
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 123px 228px 174px 140px;
+    gap: 8.5rem;
+}
+
+.summary-page .logo-container, .summary-page .summary-logo{
+    display: flex;
+    gap: 0.625rem;
+}
+
+.summary-page .summary-logo-description{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: left;
+    padding-left: 0.45rem;
+    padding-bottom: 0.3rem;
+    padding-top: 2.2rem;
+}
+
+.summary-info .summary-institute-title{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+.summary-info ul{
+    padding-left: 0;
+}
+.summary-page .summary-info ul>li {
+    list-style: none;
+    margin-bottom: 1.25rem;
+}
+
+.summary-info ul a{
+    text-decoration: none;
+    color: white;
+}
+
+.summary-page>.summary-info>.summary-logo>img{
+    background-color: transparent !important;
+}
+.summary-info .summary-last-title{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.625rem;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 1.25rem;
+}
+footer marquee{
+    color: red;
+    font-size: 2.5rem;
+}
+
+
+
 /* RWD part */
 @media screen and (max-width:576px) {
 
@@ -430,6 +500,10 @@
         display: none;
     }
 
+    .curriculum-container .card-extra{
+        margin-top: 1.25rem;
+    }
+
     /* stories part */
     .stories #story1{
         display: none;
@@ -453,6 +527,21 @@
         width: 100%;
         height: auto;
         
+    }
+
+    /* footer part */
+    .summary-page{
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 0.75rem 3.75rem 1.25rem;
+        gap: 2rem;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .summary-page .summary-logo-description{
+        padding-left: 0;
     }
 
 }
